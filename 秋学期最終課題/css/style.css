@@ -1,0 +1,697 @@
+@charset "UTF-8";
+/* CSS Document */
+:root {
+    --light-blue: #4db1ec;
+    --blue: #1665cc;
+    --purple: #b473bf;
+    --pink: #ffb2c1;
+    --orange: #ff9f67;
+    --yellow: #ffd673;
+    --light-green: #a2e29b;
+    --green: #00a2af;
+    --grey: #333;
+    --white: #fff;
+}
+
+
+
+
+html ,body{
+    font-size: 100%;
+    /* スムーズスクロール */
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+
+
+.wrapper {
+  max-width: 100%;
+  padding: 0 1rem;
+}
+header {
+  font-family: 'Bodoni 72 Smallcaps',sans-serif;
+  background: linear-gradient(#1c006a,#11003f);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  color: var(--yellow);
+  font-size: 1.5rem;
+}
+
+
+.btn-menu {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: 1px solid rgba(255,255,255,.5);
+  color: var(--white);
+  padding: .5rem 1rem;
+}
+
+.main-nav {
+  width: 0;
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  right: 0px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.main-nav a {
+  display: block;
+  
+}
+
+.main-nav.open-menu {
+  width: 100%;
+  background: rgba(100,0,150,0.8);
+}
+
+.main-nav.open-menu a{
+  padding: 1rem 0;
+}
+
+
+.hero{
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.about {
+  padding-top: 5rem;
+  padding-left: 1rem;
+  padding-bottom: 0;
+  text-align: center;
+  color: var(--white);
+  font-family: 'Bodoni 72 Smallcaps',sans-serif;
+  background-color: #341873;
+}
+
+.about h2{
+  font-size: 4rem;
+  color: var(--yellow);
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+}
+
+
+.about-box{
+  display: flex;
+  flex-direction: column;
+  background: rgba(255,255,255,0.2);
+  padding: 2rem;
+  width: 400px;
+  margin: 0 auto;
+  color: var(--white);
+  line-height: 1.8;
+  
+  
+}
+
+.about-lead{
+  font-size: 20px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-family: 'TsukuBRdGothic-Regular','Meiryo UI','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+
+.about-text {
+  font-size: 10px;
+  font-family: 'TsukuBRdGothic-Regular','Meiryo UI','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+
+
+
+/*----------------------Menu------------------------*/
+
+
+.menu {
+  padding-top: 5rem;
+  padding-bottom: 0;
+  text-align: center;
+  color: var(--white);
+  font-family: 'Bodoni 72 Smallcaps',sans-serif;
+  background-color: #341873;
+}
+
+.menu h2{
+  font-size: 4rem;
+  color: var(--yellow);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu-lead {
+  font-size: 15px;
+  font-family: 'TsukuBRdGothic-Regular','Meiryo UI','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  padding-bottom: 30px;
+}
+
+
+/*ーーーーーーーーーーーーーーーーー　おすすめメニュー　ーーーーーーーーーーーーーーーー*/
+
+.food-intro-area{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto 120px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+
+.food-background{
+  width: 100vw;
+  margin: 0;
+  margin-left: -1rem;
+  padding: 0;
+  padding-bottom: 30px;
+  background-color: #887057;
+  
+}
+
+
+.food-info {
+  max-width: 600px;
+  margin-left: 6%;
+}
+
+.food-recommend {
+  background: #E8DE5D;
+  font-size: clamp(12px, 1.2vw, 14px);
+  text-align: left;
+  padding: 6px 14px;
+  border-radius: 12px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  
+}
+
+.food-title{
+  font-size: clamp(70px, 10vw, 200px);
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  
+}
+
+.food-text-area {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.food-subtitle{
+  font-size: clamp(40px, 4vw, 100px);
+  font-weight: bold;
+  text-align: left;
+  color: #f5e8a8;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-family: 'TsukuBRdGothic-Regular','Meiryo UI','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+
+.food-text{
+  font-size: clamp(16px, 2vw, 32px);
+  text-align: center;
+  margin: 0 0 20px;
+  font-family: 'TsukuBRdGothic-Regular','Meiryo UI','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+
+
+.food-title-image img{
+  width: 500px;
+  padding-top: 30px;
+  max-width: 450px;
+  text-align: right;
+  margin-bottom: 90px;
+  
+}
+/*ーーーーーーーーーーーーメニュー3点ーーーーーーーーーーーーーー*/
+
+
+
+.food-menu-area{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 32px;
+}
+
+
+.other-menu{
+  font-size: clamp(30px, 2vw, 35px);
+  font-family: 'TsukuBRdGothic-Regular','Meiryo UI','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+
+.food-item {
+  width: 80%;
+  max-width: 320px;
+ 
+}
+
+.food-item img{
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  grid-template-columns: repeat(3, 26vw);
+  grid-template-rows: repeat(5, 26vw);
+  
+  
+}
+
+.food-item p{
+  margin-top: 5px;
+  font-size: 13px;
+  color: #FFFFFF;
+  font-family: 'TsukuBRdGothic-Regular','Meiryo UI','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+
+.food-title-image img{
+  width: 400px;
+  margin-top: 60px;
+  text-align: left;
+  margin-right: 0;
+  transition: transform 0.3 ease, box-shadow 0.3 ease;
+  cursor: pointer;
+  
+}
+
+
+.food-item:hover{
+  transform: scale(1.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/*ーーーーーーーーーーーーdrikーーーーーーーーーーーーーー*/
+
+.drink-intro-area{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto 120px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+
+.drink-background{
+  width: 100vw;
+  margin: 0;
+  margin-left: -1rem;
+  padding: 0;
+  padding-bottom: 30px;
+  background-color:#075C50;
+  
+}
+
+.food-text-area {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.drink-recommend {
+  background: #E8DE5D;
+  font-size: clamp(12px, 1.2vw, 14px);
+  padding: 6px 14px;
+  border-radius: 12px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  
+}
+
+.drink-title{
+  font-size: clamp(70px, 10vw, 200px);
+  text-align: center;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  
+}
+
+
+.drink-subtitle{
+  font-size: clamp(12px, 4vw, 48px);
+  font-weight: bold;
+  color: #f5e8a8;
+  margin: 0 0 20px;
+  margin-top: 20px;
+  font-family: 'TsukuBRdGothic-Regular','Meiryo UI','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+
+
+
+
+.drink-text{
+  font-size: clamp(16px, 2vw, 32px);
+  text-align: center;
+  margin: 0 0 20px;
+  font-family: 'TsukuBRdGothic-Regular','Meiryo UI','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+
+
+.drink-title-image img{
+  width: 400px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+/*ーーーーーーーーーーーーAccessーーーーーーーーーーーーーー*/
+
+.access-background{
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: center
+}
+
+.access-main-title {
+  font-size: clamp(32px, 6vw, 64px);
+  color: #f5e8a8;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  letter-spacing: 0.1rem;
+}
+
+
+
+.access-area {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.access-card{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  border-radius: 30px;
+  min-height: 500px;
+  
+}
+
+.access-card1{
+  background: #094C34;
+  width: 450px;
+  
+}
+
+.access-card2{
+  background: #220E40;
+  width: 450px;
+  
+}
+
+.access-title{
+  font-size:50px;
+  color: #f5e8a8;
+  margin-bottom: 30px;
+}
+
+.access-text{
+  padding-top: 40px;
+  font-size: 40px;
+  font-family: 'TsukuBRdGothic-Regular','Meiryo UI','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif; 
+  
+}
+
+.access-text-place{
+  font-size: 20px;
+  font-family: 'TsukuBRdGothic-Regular','Meiryo UI','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif; 
+}
+
+.access-number {
+  font-family: 'TsukuBRdGothic-Regular','Meiryo UI','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif; 
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.access-map img{
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+
+.site-fotter{
+  width: 100vw;
+  background-color: black;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 0;
+  margin-left: -1rem;
+}
+
+.fotter-text{
+  color: #f5e8a8;
+  font-size: 18px;
+  letter-spacing: 0.1rem;
+}
+
+
+
+
+
+/*デスクトップの指定*/
+@media (min-width: 1000px)/*1000pxになるタイミングの指定*/{
+  .btn-menu {
+    display: none;
+  }
+  
+  .main-nav {
+    width: 100%;
+    display: flex;
+    position: static;
+  }
+  
+  .main-nav li {
+    margin: 0 0 0 1.5rem;
+  }
+  
+  .about-box {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  
+  .about-lead {
+    font-size: 32px;
+  }
+  
+  .about-text{
+    font-size: 18px;
+  }
+  
+  
+  .menu-lead{
+    font-size: 20px;
+    padding-bottom: 40px;
+  }
+  
+  
+  
+  /*＾＾＾＾＾＾foodメニュー＾＾＾＾＾＾＾*/
+  
+  .food-intro-area {
+   align-items: flex-start;
+  flex-direction: row;
+   justify-content: space-between;
+  }
+  
+  
+  .food-info{
+   width: 50%;
+    
+  }
+  .food-text-area {
+    max-width: 600px;
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 20%;
+  }
+  
+  .food-title {
+    text-align: left;
+    
+  }
+  
+  
+
+  .food-recommend {
+    margin-top: 50px;
+
+  }
+  
+  .food-text{
+    text-align: left;
+  }
+  
+  
+ .food-title-image img{
+  width: 700px;
+  padding-top: 30px;
+  max-width: 1000px;
+  text-align: left;
+  
+}
+  
+  
+  
+  .food-menu-area {
+  overflow: visible;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 70px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom:  20px;
+  }
+  
+  .other-menu{
+    writing-mode: vertical-r1;
+    margin-left: 10px;
+  }
+  
+  .food-item {
+    width: 500px;
+    align-items: center;
+  
+  }
+  
+  .food-item p{
+    margin-top: 10px;}
+  
+  
+  
+  
+ /*＾＾＾＾＾＾Drinkメニュー＾＾＾＾＾＾＾*/ 
+  
+   .drink-intro-area {
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
+  }
+  
+  
+  .drink-intro-area.reverse{
+    flex-direction: row-reverse;
+  }
+  
+  .drink-info{
+    width: 50%;
+    text-align: left;
+  }
+  
+  .drink-text-area{
+    text-align: left;
+  }
+  
+  .drink-title {
+    padding-bottom: 40px;
+    text-align: right;
+    font-size: 200px;
+    
+  }
+  
+  .drink-text{
+    text-align: left;
+  }
+
+  .drink-recommend {
+    margin-top: 50px;
+
+  }
+  
+  
+  
+  .drink-title-image img{
+    max-width: 900px;
+    margin-top: 0;
+    margin-left: 70px;
+    text-align: left;
+  }
+  
+  
+  
+  
+  
+  
+    
+ /*＾＾＾＾＾＾ACCESS＾＾＾＾＾＾＾*/ 
+  
+  .access-area{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .access-card{
+    width: 48%;
+  }
+  
+  .access-main-title{
+    padding-bottom: 60px;
+    
+  }
+  .access-title {
+    text-align: center;
+  }
+  
+  .access-text{
+    text-align: left;
+  }
+  
+  .access-text-place{
+    text-align: left;
+  }
+  
+  .access-number{
+    text-align: left;
+    font-size: 40px;
+  }
+  
+  .access-map img{
+    margin-top: 40px;
+    width: 500px;
+  }
+}
+  
+  
+  
+  
+  
+  
+  
